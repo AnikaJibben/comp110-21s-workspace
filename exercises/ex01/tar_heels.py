@@ -16,5 +16,3 @@ else:
             print("HEELS")
         else:
             print("CAROLINA")
-
-  

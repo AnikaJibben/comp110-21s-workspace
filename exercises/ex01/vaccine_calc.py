@@ -24,7 +24,7 @@ doses_day: int = int(input("Doses given per day:"))
 target_percent: int = int(input("Target percent vaccinated(out of 100):"))
 
 today: datetime = datetime.today()
-days: int = (target_percent / 100) * population-doses_admin / doses_day
+days: float = (target_percent / 100) * population - doses_admin / doses_day
 date_1: timedelta = timedelta(days)
 future: datetime = today + date_1
 

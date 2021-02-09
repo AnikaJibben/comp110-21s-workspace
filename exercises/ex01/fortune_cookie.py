@@ -13,9 +13,9 @@ from random import randint
 
 
 # Begin your solution here...
-print ("Your fortune cookie says...")
+print("Your fortune cookie says...")
 
-random: int = randint(1,100)
+random: int = randint(1, 100)
 
 if random < 25:
     print("You will have the best day of your life this weekend.")

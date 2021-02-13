@@ -12,19 +12,19 @@ def main() -> None:
     print("Now, go spread positive vibes!")
 
 
-def fortune_cookie () -> str:
-    """fortune options""" 
+def fortune_cookie() -> str:
+    """Fortune options.""" 
     random: int = randint(1, 100)
     if random < 25:
-        return print("Your weekend will be amazing!")
+        return "Your weekend will be amazing!"
     else: 
         if random < 50:
-            return print("A large amount of money will come into your life shortly.")
+            return "A large amount of money will come into your life shortly."
         else:
             if random < 75:
-                return print("2021 will be a great year!")
+                return "2021 will be a great year!"
             else:
-               return  print("Someone special is near.")
+                return "Someone special is near."
 
 
 # Python Idiom for "starting" the program when run as a module.

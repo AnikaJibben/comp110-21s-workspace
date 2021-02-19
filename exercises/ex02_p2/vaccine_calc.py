@@ -11,15 +11,15 @@ def main() -> None:
     doses: int = int(input("Doses administered: "))
     doses_per_day: int = int(input("Doses per day: "))
     target: int = int(input("Target percent vaccinated: "))
-    x: str = days_to_target(population, doses, doses_per_day, target)
+    x: int = days_to_target(population, doses, doses_per_day, target)
     y: str = future_date(x)
-    print("We will reach " + target + "% vaccination in " + x + " days, which falls on " + y )
+    print("We will reach " + str(target) + "% vaccination in " + str(x) + " days, which falls on " + y)
 
 
 def days_to_target(population: int, doses: int, doses_per_day: int, target: int) -> int:
     """Number of days to the target percent."""
-    days: float = ((target / 100) * (2 * population) - doses) / doses_per_day
-    days: round(days)
+    days: int = ((target / 100) * (2 * population) - doses) / doses_per_day
+    round(days)
     return days
 
 

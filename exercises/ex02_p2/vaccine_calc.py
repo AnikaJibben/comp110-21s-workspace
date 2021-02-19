@@ -18,8 +18,8 @@ def main() -> None:
 
 def days_to_target(population: int, doses: int, doses_per_day: int, target: int) -> int:
     """Number of days to the target percent."""
-    days: int = ((target / 100) * (2 * population) - doses) / doses_per_day
-    round(days)
+    days: float = ((target / 100) * (2 * population) - doses) / doses_per_day
+    days = round(days)
     return days
 
 
@@ -29,6 +29,7 @@ def future_date(x: int) -> str:
     date_1: timedelta = timedelta(x)
     future: datetime = today + date_1
     return future.strftime("%B %d, %Y")
+
 
 if __name__ == "__main__":
     main()

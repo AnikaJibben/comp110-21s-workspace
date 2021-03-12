@@ -16,13 +16,12 @@ def palindromify(x: str, y: bool) -> str:
         while index > 0:   
             x += x[index - 1]
             index = index - 1
-        return x
     if y is False:
         index = len(x) - 1
         while index > 0:
             x += x[index - 1]
             index = index - 1
-        return x
+    return x
     
 
 if __name__ == "__main__":

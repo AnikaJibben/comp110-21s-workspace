@@ -8,7 +8,7 @@ def main() -> None:
     # Put print statements here to test your function
     # ex. print(is_prime(5)), print(list_primes(10, 20))
     print(is_prime(15))
-    print(list_prime(10, 20))
+    print(list_primes(10, 20))
 
 
 def is_prime(x: int) -> bool:
@@ -17,7 +17,7 @@ def is_prime(x: int) -> bool:
         return False
     if x <= 3:
         return True
-    if x % 2 == 0 or x % 3 == 0 :
+    if x % 2 == 0 or x % 3 == 0:
         return False
     i: int = 5
     while i * i <= x:
@@ -29,9 +29,9 @@ def is_prime(x: int) -> bool:
 
 def list_primes(x: int, y: int) -> list[int]:
     """Making a list of all primes in range."""
-    start: int = 10
+    start: int = x
     primes: list[int] = []
-    while start < 20:
+    while start < y:
         if is_prime(start) is True:
             primes.append(start) 
         start += 1

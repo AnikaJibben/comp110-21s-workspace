@@ -8,6 +8,7 @@ def main() -> None:
     print(avoid_fifth("hello there"))
     print(avoid_fifth("Even this sentence has many of the wrong letter, in different sizes."))
 
+
 def avoid_fifth(x: str) -> str:
     """Avoid the Letter E."""
     i: int = 0

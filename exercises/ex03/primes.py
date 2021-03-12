@@ -10,6 +10,7 @@ def main() -> None:
     print(is_prime(15))
     print(list_prime(10, 20))
 
+
 def is_prime(x: int) -> bool:
     """Prime number evaluator.""" 
     if x <= 1:
@@ -26,13 +27,13 @@ def is_prime(x: int) -> bool:
     return True
 
 
-def list_prime(x: int, y: int) -> list[int]:
+def list_primes(x: int, y: int) -> list[int]:
     """Making a list of all primes in range."""
     start: int = 10
     primes: list[int] = []
     while start < 20:
-        if is_prime(start) == True:
-           primes.append(start) 
+        if is_prime(start) is True:
+            primes.append(start) 
         start += 1
     return primes
 

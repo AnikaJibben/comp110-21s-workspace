@@ -42,7 +42,7 @@ class Point:
         return Point(self.x +rhs.x, self.y + rhs.y)
 
     def __getitem__(self, index: int) -> float:
-        """Overload the subscroption notation."""
+        """Overload the subscription notation."""
         if index == 0:
             return self.x
         elif index ==1:

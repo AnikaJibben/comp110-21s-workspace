@@ -8,8 +8,8 @@ __author__ = "730395244"
 
 
 class Simpy:
+    """Simpy class."""
     values: list[float]
-
 
     def __init__(self, values: list[float]):
         """Constructor."""
@@ -44,7 +44,7 @@ class Simpy:
         """Sum Method."""
         return sum(self.values)
 
-    def __add__(self,rhs: Union[float, Simpy]) -> Simpy:
+    def __add__(self, rhs: Union[float, Simpy]) -> Simpy:
         """First operator overload to add."""
         final: list[float] = []
         if isinstance(rhs, float):

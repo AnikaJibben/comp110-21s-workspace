@@ -112,5 +112,5 @@ class Simpy:
     def __getitem__(self, rhs: Union[int, list[bool]]) -> Union[float, Simpy]:
         """Final o.o."""
         return self.values[rhs]
-
-        
+            
+                

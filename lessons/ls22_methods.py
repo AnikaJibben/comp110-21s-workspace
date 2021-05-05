@@ -53,7 +53,7 @@ class Point:
 
 a: Point = Point(1.0, 2.0)
 # a.scale_by(2.0)
-
+a.x = 6
 b: Point = a * 2.0
 c: Point = a + b
 
